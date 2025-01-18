@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nylayout.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="chat.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar">Widgets & Api
+        <div>
+            <img class="settings-btn" src="settings.png" width="50px" onclick="settingsPop()">
+
+        </div>
+    </nav>
+    <div id="settings" class="noni">
+        <img class="x-icon settings-btn" src="icons8-close-window-50.png" alt="icon" onclick="xtryck()">
+        <p>Settings</p>
+
+        <p class="margin">Din Weather-Api-Key</p>
+        <input class="input-api margin" id="api-weather" type="text" value="apikey"></input> <br>
+
+        <p>Din Ask-Me-Anything-Api-Key</p>
+        <input class="input-api margin" id="api-ama" type="text" value="apikey"></input> <br>
+
+        <p>Din Databas-Api-Key</p>
+        <input class="input-api margin" id="api-db-key" type="text" value="apikey"></input> <br>
+
+        <div>
+            <button class="btn" type="button" id="submit" onclick="sparaKey()" type="submit">Spara</button>
+            <button class="btn" type="button" onclick="xtryck()" type="text">Stäng</button>
+        </div>
+    </div>
+    <div id="opacity" class="row">
+        <div id="box1 " class="column">
+            <div id="weather1" class="margin"></div>
+            <hr>
+            <div id="weather" class="margin"></div>
+            <hr>
+            <div id="weather2" class="margin"></div>
+        </div>
+        <div class="column">
+            <div class="margin" id="box2"></div>
+            <hr>
+            <div class="margin" id="box5">
+                <p class="margin">Get activity with friends</p>
+                <select id="amount1" class="select-btn">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="8">8</option>
+                </select>
+                <button class="btn margin" type="button" id="btn1" type="button" value="Give me an activity!">Give me an
+                    activity</button>
+                <div class="margin" id="warning1"></div>
+                <div class="margin" id="apitest"></div>
+                <div class="margin" id="box4">
+                    <hr>
+                    <p class="margin">Chuck Norris Joke</p>
+
+                    <div class="margin" id="joke"></div>
+                </div>
+            </div>
+        </div>
+        <div id="box3" class="column">
+            <div id="chatContainer">
+                <div id="inputField">
+                    <p>Ask Me Anything</p>
+                    <input class="margin" id="question" type="text" placeholder="Ask a question">
+                    <button class="btn margin" type="button" id="btn" type="button" value="Submit">Ask</button>
+                </div>
+                <div id="questionOld">
+                    <span id="qText">This is a placeholder text, I am of no importance</span>
+                </div>
+                <div id="answer">
+                    ...
+                </div>
+                <div>
+                    <hr class="margin">
+                    <p id="jonnen"></p>
+                    <select class="btn" id="filterTodo">
+                        <option value="all">All</option>
+                        <option value="notdone">Not done</option>
+                        <option value="done">Done</option>
+                    </select>
+                    <!--<p>Change Category-->
+                    <p id="hobby"></p>
+                    <p class="tododiv scrollbar" id="todolist"></p>
+                    <div class="tododiv scrollbar margin" id="todo-list"></div>
+                    <input id="todo-title" class="btn margin" type="text" placeholder="Todo title">
+                    <input class="date-picker" id="due-at" type="date"><br>
+                    <select class="btn" id="getCategory">
+                        <option value="1">Home</option>
+                        <option value="2">Hobby</option>
+                        <option value="3">School</option>
+                        <option value="4">Work</option>
+                    </select>
+
+                    <button class="btn" type="button" id="todo-post" type="button" value="Submit">Save Todo</button>
+                    <div id="fis"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+</body>
+<script src="index copy.js"></script>
+<script src="chat.js"></script>
+
+
+</html>

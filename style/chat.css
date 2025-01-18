@@ -1,0 +1,224 @@
+#hover-css:hover{
+    cursor: pointer;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+
+#inputField {
+    text-align: left;
+    
+}
+
+#question {
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 1px solid rgb(191, 191, 191);
+    padding: 8px;
+    text-align: left;
+    outline: none;
+    width: 79%;
+}
+.btn{
+    -webkit-appearance: none;
+    font-size: 16px;
+    border: 1px solid rgb(191, 191, 191);
+    padding: 8px;
+    text-align: left;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+#btn:hover{
+    cursor:pointer;
+    opacity: 0.7;
+}
+
+#chatContainer {
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 12px;
+    padding: 12px;
+    
+    text-align: left;
+
+}
+
+#questionOld {
+    border: 1px solid rgb(191, 191, 191);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: none;
+    padding: 12px;
+    text-align: left;
+    margin-top: 12px;
+
+}
+#qText {
+    scale: 1;
+    transition: 0.5s;
+}
+
+#qText:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#answer {
+    border: 1px solid rgb(191, 191, 191);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 12px;
+    text-align: left;
+    display: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 100px;
+}
+#btnCont {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+#cross {
+    padding:0;
+    width: 15px;
+    height: 15px;
+    padding-bottom: 2px;
+}
+
+#rem {
+    height: 94%;
+}
+
+.btn:hover {
+    cursor:pointer;
+    opacity: 0.7;
+}
+
+.tododiv {
+
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 350px;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: var(--color-text);
+    border: 1px solid var(--color-text);
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: var(--color-blog);
+}
+
+.todo-styling {
+    -webkit-appearance: none;
+    font-size: 16px;
+    border: 2px solid rgb(191, 191, 191);
+    padding: 8px;
+    text-align: left;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.todo-styling-items {
+    -webkit-appearance: none;
+    font-size: 16px;
+    padding: 8px;
+    text-align: left;
+    border-radius: 10px;
+    background-color: var(--color-blog);
+    color: #fff;
+    width: 90%;
+    margin-top: 10px;
+
+}
+
+.todo-styling-date {
+    float: right;
+}
+
+.text-align-left {
+    text-align: end;
+}
+
+.cat-styling {
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 2px;
+    margin-top: 10px;
+    display: table;
+  }
+
+  .todo-item-styling {
+    margin-left: 4px;
+    display: inline-block;
+  }
+  
+  /* tagen från https://loading.io/css/*/
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 36px;
+    height: 36px;
+  }
+  .lds-ripple div {
+    position: absolute;
+    border: 2px solid rgb(255, 255, 255);
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 18px;
+      left: 18px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    4.9% {
+      top: 18px;
+      left: 18px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    5% {
+      top: 18px;
+      left: 18px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 36px;
+      height: 36px;
+      opacity: 0;
+    }
+  }
